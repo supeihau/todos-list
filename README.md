@@ -14,7 +14,7 @@
 
 ## 啟用
 
-以 [http://localhost:3000](http://localhost:3000) 查看網頁效果
+以 https://supeihau.github.io/todos-list/ 查看網頁效果
 
 ## 參考資源
 
