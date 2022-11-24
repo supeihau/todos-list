@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import InitialPage from "./components/InitialPage";
-import Plus from "./components/Plus";
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 import "./App.css";
-import { Box, Modal, Typography } from "@mui/material";
 
 const App = () => {
   const [input, setInput] = useState("");
-  const [inputTime, setInputTime] = useState("");
   const [time, setTime] = useState("");
-  const [editTime, setEditTime] = useState(null);
   const [todos, setTodos] = useState([]);
   const [editTodo, setEditTodo] = useState(null);
 

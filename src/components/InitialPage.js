@@ -7,7 +7,7 @@ const InitialPage = (props) => {
     return (
         <div className="initial-page">
             <div className="img">
-                <img src="https://fakeimg.pl/200x200/"></img>
+                <img src="https://i.imgur.com/7g5Szro.png"></img>
             </div>
             <div className="initial-page-btn">
                 <button className="button-plus" onClick={() => setCurrentPage('From')}>
