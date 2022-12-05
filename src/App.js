@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import InitialPage from "./components/InitialPage";
 import Form from "./components/Form";
@@ -6,12 +6,13 @@ import TodoList from "./components/TodoList";
 import "./App.css";
 
 const App = () => {
-  const [input, setInput] = useState("");
-  const [time, setTime] = useState("");
-  const [todos, setTodos] = useState([]);
-  const [editTodo, setEditTodo] = useState(null);
+  const [input, setInput] = useState(""); //輸入代辦名稱
+  const [time, setTime] = useState(""); //輸入時間
+  const [todos, setTodos] = useState([]); //初建立的代辦事項props
+  const [editTodo, setEditTodo] = useState(null); //更改的代辦
 
   const [currentPage, setCurrentPage] = useState('InitialPage');
+  // currentPage 預設是InotialPage， 當currentPage變動時使用setCurrentPage去更改顯示的頁面
 
   return (
     <div className="container">
@@ -19,7 +20,7 @@ const App = () => {
         <div className="app-wrapper">
           <Header />
           <InitialPage
-            setCurrentPage={setCurrentPage}
+            setCurrentPage={setCurrentPage} //props傳送到InitialPage的頁面
           />
         </div>
       )}
